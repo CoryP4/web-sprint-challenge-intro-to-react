@@ -13,7 +13,7 @@ const App = () => {
   // side effect in a component, you want to think about which state and/or props it should
   // sync up with, if any.
 
-  const [characterSet, setCharacterSet] = useState(null)
+  const [characterSet, setCharacterSet] = useState([])
 
   useEffect(() => {
     axios.get(BASE_URL)
@@ -33,7 +33,11 @@ const App = () => {
     <div className="App">
       <h1 className="Header">Characters</h1>
     </div>
-    <Characters/>
+    {
+      characterSet.map(char => {
+        return <Characters key={char.created} name={char.name} birthday={char.birth_year}/>
+      })
+    }
     </>
   );
 }
