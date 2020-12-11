@@ -1,17 +1,22 @@
 // Write your Character component here
-import React, { useState, useEffect } from 'react'
-import axios from 'axios'
+import React from 'react'
+import styled from 'styled-components'
 
-
-// const BASE_URL = 'https://swapi.py4e.com/api/people/'
+const StyledItems = styled.div`
+    padding: 10px;
+    margin: 10px;
+    display: grid;
+    grid-gap: 10px;
+    line-height: 1.15;
+`
 
 export default function Characters({ name, birthday }) {
 
     return(
-        <div>
-            <h2>{name}</h2>
-            <p>{birthday}</p>
-        </div>
+        <StyledItems>
+            <h2>Name: {name}</h2>
+            <p>Birthday: {birthday}</p>
+        </StyledItems>
     )
     
 }
