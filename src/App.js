@@ -6,6 +6,11 @@ import styled from 'styled-components'
 
 const BASE_URL = 'https://swapi.py4e.com/api/people/'
 
+
+const newfunc = () => {
+  console.log('hello')
+}
+
 const StyledCard = styled.div`
     display: flex;
     flex-direction: column;
@@ -60,5 +65,8 @@ export default App;
 
 /*
 some notes here to prepare for the assignment ahead
+
+
+and some more here for the good submit
 
 */
