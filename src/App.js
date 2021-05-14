@@ -8,7 +8,9 @@ const BASE_URL = 'https://swapi.py4e.com/api/people/'
 
 
 const newfunc = () => {
-  console.log('hello')
+  console.log('hello');
+  console.log('dog')
+
 }
 
 const StyledCard = styled.div`
