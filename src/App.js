@@ -56,3 +56,9 @@ const App = () => {
 }
 
 export default App;
+
+
+/*
+some notes here to prepare for the assignment ahead
+
+*/

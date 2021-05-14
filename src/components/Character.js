@@ -13,7 +13,7 @@ const StyledItems = styled.div`
 export default function Characters({ name, birthday }) {
 
     return(
-        <StyledItems>
+        <StyledItems >
             <h2>Name: {name}</h2>
             <p>Birthday: {birthday}</p>
         </StyledItems>
